@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kshitija Darde</title>
+    <link rel="stylesheet" href="output.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+
+    <meta name="google-site-verification" content="lQF_Fm81ahJtK09xBqojdBnQi4NI-kO5i4PA5x5k47o" />
+    <meta name="description"
+        content="Portfolio of Kshitija Darde, a passionate Frontend Developer. Explore my projects and skills.">
+    <meta name="author" content="Kshitija Darde">
+    <meta name="keywords" content="Kshitija Darde, Frontend Developer, Portfolio, HTML, CSS, JavaScript">
+
+    <meta property="og:title" content="Kshitija Darde - Frontend Developer">
+    <meta property="og:description"
+        content="Portfolio of Kshitija Darde, showcasing projects and skills in web development.">
+    <meta property="og:image" content="https://kshitijadarde.netlify.app/images/og-image.png">
+    <meta property="og:url" content="kshitijadarde.netlify.app">
+    <meta property="og:type" content="website">
+
+
+
+
+</head>
+
+<body class="bg-[#0b1d3f] mx-0 text-white overflow-x-hidden">
+    <header class="flex justify-between items-center px-10 pt-2 top-0">
+        <div>
+            <a href="index.html" class="flex-shrink-0">
+                <img src="/images/logo-img.png" alt="logo-img" class="w-20 md:w-40">
+            </a>
+        </div>
+        <div class="flex flex-col md:flex-row space-x-6 md:space-x-10">
+            <div>
+                <a href="mailto:kshitijadarde@gmail.com?subject=Hello&body=I%20am%20interested%20in%20your%20work"
+                    class="group flex-shrink-0 relative inline-block text-gray-400 hover:text-white">
+                    <i class="fas fa-envelope text-2xl"></i>
+
+                    <!-- Button (hidden by default, appears on hover) -->
+                    <span
+                        class="absolute left-1/2 transform -translate-x-1/2 -top-10 mt-2 px-3 py-1 bg-gray-600 text-white text-sm font-bold rounded-xl hidden group-hover:inline-block">Email</span>
+                </a>
+            </div>
+            <div>
+                <a href="http://www.linkedin.com/in/kshitija-d-95b2591aa" target="_blank"
+                    class="group flex-shrink-0 relative inline-block text-gray-400 hover:text-white">
+                    <i class="fab fa-linkedin-in text-2xl"></i>
+                    <!-- Button (hidden by default, appears on hover) -->
+                    <span
+                        class="absolute left-1/2 transform -translate-x-1/2 -top-10  mt-2 px-3 py-1 bg-gray-600 text-white text-sm font-bold rounded-xl hidden group-hover:inline-block">Linkedin</span>
+                </a>
+            </div>
+            <div>
+                <a href="https://github.com/CoderKD101" target="_blank"
+                    class="group flex-shrink-0 relative inline-block text-gray-400 hover:text-white">
+                    <i class="fab fa-github text-2xl"></i>
+                    <!-- Button (hidden by default, appears on hover) -->
+                    <span
+                        class="absolute left-1/2 transform -translate-x-1/2 -top-10 mt-2 px-3 py-1 bg-gray-600 text-white text-sm font-bold rounded-xl hidden group-hover:inline-block">Github</span>
+                </a>
+            </div>
+            <div>
+                <a href="https://drive.google.com/file/d/1Tl-ekHgJeNCa6i83-WxycatFh9qn0F4E/view?usp=sharing"
+                    class="group flex-shrink-0 relative inline-block text-gray-400 hover:text-white" target="_blank">
+                    <i class="fa fa-file text-2xl" aria-hidden="true"></i>
+                    <!-- Button (hidden by default, appears on hover) -->
+                    <span
+                        class="absolute left-1/2 transform -translate-x-1/2 -top-10 mt-2 px-3 py-1 bg-gray-600 text-white text-sm font-bold rounded-xl hidden group-hover:inline-block">Resume</span>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <main class="main-content px-10 pt-2">
+        <div class="area">
+            <ul class="circles">
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+        </div>
+        <section class="section-hero h-[450px] relative flex flex-col items-center justify-between px-4 md:px-8">
+            <div class="flex flex-col md:flex-row items-center justify-center gap-8 ">
+                <div class=" text-center md:text-left flex-grow ">
+                    <h1 class="text-3xl md:text-6xl font-bold py-4">Kshitija Darde</h1>
+                    <p class="font-semibold text-base md:text-xl">Frontend Developer | Photographer by Passion</p>
+                    <span id="element" class="font-semibold text-lg md:text-2xl py-2 text-blue-400"></span>
+                    <div>
+                        <!-- About Me Button -->
+                        <button id="aboutMeButton"
+                            class="text-lg md:text-2xl transition duration-500 ease-in-out hover:-translate-y-1 hover:scale-110 bg-slate-900 hover:bg-slate-700 rounded-md py-3 px-6 my-6 w-[200px]">
+                            About Me
+                        </button>
+                    </div>
+                </div>
+                <div class="flex-shrink-0">
+                    <img src="images/main-logo.png" alt="Main Logo" class="w-[150px] md:w-[300px] h-auto">
+                </div>
+            </div>
+
+            <div class="text-2xl font-bold text-center">
+                <h2 class="text-base md:text-2xl">
+                    Project Showcase
+                </h2>
+                <span class="flex justify-center animate-bounce py-6">
+                    <img src="/images/down-arrow.png" alt="down-arrow" class="w-[30px] md:w-[50px] h-auto">
+                </span>
+            </div>
+
+            <!-- Popup Overlay -->
+            <div id="aboutMePopup" class="fixed inset-0 bg-black bg-opacity-50 hidden z-50">
+                <!-- Popup Content -->
+                <div id="popupContent"
+                    class="bg-[#0a2351] w-full md:w-1/2 lg:w-1/3 h-auto p-8 rounded-l-lg shadow-lg absolute right-0 top-0">
+                    <h2 class="text-2xl font-bold mb-3 text-blue-400">About Me</h2>
+                    <p class="text-white font-bold text-base leading-5 my-4">
+                        Hi, I’m Kshitija Darde! A <span class="text-blue-400">frontend developer</span>
+                        passionate about creating responsive and visually
+                        appealing websites.I’m here to help businesses stand out by designing user-friendly digital
+                        experiences that solve real-world problems.
+                        <i class="fas fa-desktop"></i>
+                    </p>
+
+                    <p class="text-white font-bold text-base leading-5 my-4">
+                        Beyond coding, I explore my creativity through photography, which sharpens my design sense and
+                        attention to detail.
+                        <i class="fa fa-camera"></i>
+                    </p>
+                    <p class="text-white font-bold text-base leading-5 my-4">
+                        Let’s collaborate to turn your ideas into impactful realities!
+                    </p>
+                    <!-- Close Button -->
+                    <button id="closePopup" class="absolute top-3 right-3 text-gray-500 hover:text-gray-700">
+                        ✖
+                    </button>
+                    <div>
+                        <img src="images/about-me-img.png" alt="coder girl image" class="w-[90%] h-[320px] ">
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <section class="section-work mt-20 px-4 sm:px-6">
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-8">
+                <div
+                    class="bg-gray-600 rounded-lg flex flex-col items-center w-full max-w-[350px] md:max-w-[550px] h-auto mx-auto px-4 py-6">
+                    <img src="/images/Project Image (1).jpg" alt="photography blog website project img"
+                        class="w-full object-cover rounded-lg">
+                    <h3 class="text-lg md:text-2xl font-bold mt-4">Kshitcaptures blogsite
+                        <a href="https://kshitcaptures.netlify.app/" target="_blank">
+                            <i class="fas fa-external-link"></i>
+                        </a>
+                    </h3>
+                    <div class="flex flex-wrap gap-2 py-4">
+                        <span
+                            class="px-3 py-1 font-bold bg-blue-500 text-white text-xs md:text-sm rounded-full">HTML</span>
+                        <span
+                            class="px-3 py-1 font-bold bg-green-500 text-white text-xs md:text-sm rounded-full">CSS</span>
+                        <span
+                            class="px-3 py-1 font-bold bg-yellow-400 text-white text-xs md:text-sm rounded-full">JavaScript</span>
+                        <span
+                            class="px-3 py-1 font-bold bg-blue-950 text-white text-xs md:text-sm rounded-full">Canva</span>
+                        <span
+                            class="px-3 py-1 font-bold bg-pink-950 text-white text-xs md:text-sm rounded-full">Netlify</span>
+                    </div>
+                    <p class="mt-4 text-sm md:text-base font-bold">
+                        Kshitcaptures is a beautifully crafted photography blog site showcasing original photography and
+                        engaging blog content. Designed and developed from scratch, this project highlights creativity
+                        and attention to detail. Key features include a visually appealing gallery of photos and a
+                        clean, easy-to-navigate layout that immerses visitors in a serene experience.
+                    </p>
+
+                </div>
+                <div
+                    class="bg-gray-600 rounded-lg flex flex-col items-center w-full max-w-[350px] md:max-w-[550px] h-auto mx-auto px-4 py-6">
+                    <img src="/images/Project Image (2).png" alt="Ecommerce fashion website project img"
+                        class="w-full object-cover rounded-lg">
+                    <h3 class="text-lg md:text-2xl font-bold mt-4">Mejiwoo fashion store
+                        <a href="https://mejiwoofashion.netlify.app/" target="_blank">
+                            <i class="fas fa-external-link"></i>
+                        </a>
+                    </h3>
+                    <div class="flex flex-wrap gap-2 py-4">
+                        <span
+                            class="px-3 py-1 font-bold bg-blue-500 text-white text-xs md:text-sm rounded-full">HTML</span>
+                        <span
+                            class="px-3 py-1 font-bold bg-green-500 text-white text-xs md:text-sm rounded-full">CSS</span>
+                        <span
+                            class="px-3 py-1 font-bold bg-yellow-400 text-white text-xs md:text-sm rounded-full">JavaScript</span>
+                        <span class="px-3 py-1 font-bold bg-teal-500 text-white text-xs md:text-sm rounded-full">Tailwin
+                            CSS</span>
+                        <span
+                            class="px-3 py-1 font-bold bg-red-600 text-white text-xs md:text-sm rounded-full">Figma</span>
+                        <span
+                            class="px-3 py-1 font-bold bg-pink-950 text-white text-xs md:text-sm rounded-full">Netlify</span>
+                    </div>
+                    <p class="mt-4 text-sm md:text-base font-bold">
+                        Mejiwoo Fashion Store is a stylish and responsive e-commerce website inspired by Korean fashion
+                        trends. Built with a sleek and user-centric design based on a Figma mockup, the layout was
+                        enhanced with subtle modifications to improve usability and visual appeal. Key features include
+                        an interactive product showcase, intuitive navigation, and dynamic hover effects, creating an
+                        engaging and seamless browsing experience.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section class="section-skills my-20 px-6 overflow-hidden relative">
+            <h2 class="font-bold text-2xl md:text-4xl text-center py-6 my-4">Skills That Define Me</h2>
+            <!-- Animated Line Above -->
+            <div class="relative w-full">
+                <div class="animate-line mx-auto h-[2px] w-16 bg-indigo-500 my-4"></div>
+            </div>
+
+
+            <div class="relative w-full overflow-hidden py-14">
+                <div id="scroll-container" class="flex items-center gap-14 whitespace-nowrap animate-marquee">
+                    <!-- Original Content -->
+                    <div class="bg-white rounded-lg p-4 flex flex-col items-center text-center">
+                        <img src="/images/html-logo.png" alt="html-logo"
+                            class="w-[150px] h-[150px]  object-contain rounded-lg">
+                        <h3 class="text-xl font-bold text-slate-900 py-2">HTML</h3>
+                    </div>
+                    <div class="bg-white rounded-lg p-4 flex flex-col items-center text-center">
+                        <img src="/images/css-logo.png" alt="css-logo"
+                            class="w-[150px] h-[150px]  object-contain rounded-lg">
+                        <h3 class="text-xl font-bold text-slate-900 py-2">CSS</h3>
+                    </div>
+                    <div class="bg-white rounded-lg p-4 flex flex-col items-center text-center">
+                        <img src="images/javascript-logo.png" alt="javascript-logo"
+                            class="w-[150px] h-[150px]  object-contain rounded-lg">
+                        <h3 class="text-xl font-bold text-slate-900 py-2">JAVASCRIPT</h3>
+                    </div>
+                    <div class="bg-white rounded-lg p-4 flex flex-col items-center text-center">
+                        <img src="images/tailwind-css-logo.png" alt="tailwind-css-logo"
+                            class="w-[150px] h-[150px]  object-contain rounded-lg">
+                        <h3 class="text-xl font-bold text-slate-900 py-2">TAILWIND</h3>
+                    </div>
+                    <div class="bg-white rounded-lg p-4 flex flex-col items-center text-center">
+                        <img src="images/git-logo.png" alt="git-logo"
+                            class="w-[150px] h-[150px]  object-contain rounded-lg">
+                        <h3 class="text-xl font-bold text-slate-900 py-2">GIT</h3>
+                    </div>
+                    <div class="bg-white rounded-lg p-4 flex flex-col items-center text-center">
+                        <img src="/images/github-logo.png" alt="github-logo"
+                            class="w-[150px] h-[150px]  object-contain rounded-lg">
+                        <h3 class="text-xl font-bold text-slate-900 py-2">GITHUB</h3>
+                    </div>
+                    <div class="bg-white rounded-lg p-4 flex flex-col items-center text-center">
+                        <img src="/images/figma-logo.png" alt="figma-logo"
+                            class="w-[150px] h-[150px]  object-contain rounded-lg">
+                        <h3 class="text-xl font-bold text-slate-900 py-2">FIGMA</h3>
+                    </div>
+                    <!-- Duplicate Content for Seamless Loop -->
+                    <div class="bg-white rounded-lg p-4 flex flex-col items-center text-center">
+                        <img src="/images/html-logo.png" alt="html-logo"
+                            class="w-[150px] h-[150px]  object-contain rounded-lg">
+                        <h3 class="text-xl font-bold text-slate-900 py-2">HTML</h3>
+                    </div>
+                    <div class="bg-white rounded-lg p-4 flex flex-col items-center text-center">
+                        <img src="/images/css-logo.png" alt="css-logo"
+                            class="w-[150px] h-[150px]  object-contain rounded-lg">
+                        <h3 class="text-xl font-bold text-slate-900 py-2">CSS</h3>
+                    </div>
+                    <div class="bg-white rounded-lg p-4 flex flex-col items-center text-center">
+                        <img src="images/javascript-logo.png" alt="javascript-logo"
+                            class="w-[150px] h-[150px]  object-contain rounded-lg">
+                        <h3 class="text-xl font-bold text-slate-900 py-2">JAVASCRIPT</h3>
+                    </div>
+                    <div class="bg-white rounded-lg p-4 flex flex-col items-center text-center">
+                        <img src="images/tailwind-css-logo.png" alt="tailwind-css-logo"
+                            class="w-[150px] h-[150px]  object-contain rounded-lg">
+                        <h3 class="text-xl font-bold text-slate-900 py-2">TAILWIND</h3>
+                    </div>
+                    <div class="bg-white rounded-lg p-4 flex flex-col items-center text-center">
+                        <img src="images/git-logo.png" alt="git-logo"
+                            class="w-[150px] h-[150px]  object-contain rounded-lg">
+                        <h3 class="text-xl font-bold text-slate-900 py-2">GIT</h3>
+                    </div>
+                    <div class="bg-white rounded-lg p-4 flex flex-col items-center text-center">
+                        <img src="/images/github-logo.png" alt="github-logo"
+                            class="w-[150px] h-[150px]  object-contain rounded-lg">
+                        <h3 class="text-xl font-bold text-slate-900 py-2">GITHUB</h3>
+                    </div>
+                    <div class="bg-white rounded-lg p-4 flex flex-col items-center text-center">
+                        <img src="/images/figma-logo.png" alt="figma-logo"
+                            class="w-[150px] h-[150px]  object-contain rounded-lg">
+                        <h3 class="text-xl font-bold text-slate-900 py-2">FIGMA</h3>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Animated Line Below -->
+            <div class="relative w-full">
+                <div class="animate-line mx-auto h-[2px] w-16 bg-indigo-500 my-4"></div>
+            </div>
+        </section>
+
+        <section class="section-contact h-auto my-10 px-4 md:px-6 lg:px-12">
+            <h1 class="flex justify-center text-4xl md:text-6xl font-bold my-6">Contact Me...</h1>
+            <div
+                class="flex flex-col-reverse md:flex-row justify-between items-center my-6 py-6 space-y-6 md:space-y-0">
+                <div class="w-full md:w-[40%] flex justify-center">
+                    <img src="/images/contact-img.png" alt="contact-img"
+                        class="h-[200px] sm:h-[300px] md:h-[460px] object-contain">
+                </div>
+                <div class="w-full md:w-[50%] bg-white p-6 md:p-8 rounded-lg shadow-md">
+                    <form id="form" class="space-y-5">
+                        <!-- Name -->
+                        <div>
+                            <label for="name" class="block text-sm md:text-lg font-bold text-gray-600">Your Name
+                                <img src="images/name-logo.png" alt="name-logo" class="w-5 inline-block">
+                            </label>
+                            <input type="text" id="name" name="name" placeholder="Enter your name"
+                                class="w-full mt-1 px-4 py-2 border rounded-lg text-gray-700 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
+                                required />
+                        </div>
+                        <!-- Email -->
+                        <div>
+                            <label for="email" class="block text-sm md:text-lg font-bold text-gray-600">Your Email
+                                <img src="/images/email-logo.png" alt="email-logo" class="w-5 inline-block">
+                            </label>
+                            <input type="email" id="email" name="email" placeholder="Enter your email"
+                                class="w-full mt-1 px-4 py-2 border rounded-lg text-gray-700 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
+                                required />
+                        </div>
+                        <!-- Message -->
+                        <div>
+                            <label for="message" class="block text-sm md:text-lg font-bold text-gray-600">Message
+                                <img src="images/chat-logo.png" alt="chat-logo" class="w-5 inline-block">
+                            </label>
+                            <textarea id="message" name="message" rows="4" cols="6" placeholder="Write your message"
+                                class="w-full mt-1 px-4 py-2 border rounded-lg text-gray-700 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
+                                required></textarea>
+                        </div>
+                        <!-- Submit Button -->
+                        <button type="submit"
+                            class="w-full bg-blue-500 hover:bg-blue-600 text-white text-sm md:text-lg font-medium py-2 rounded-lg transition duration-300">
+                            Send Message
+                        </button>
+                    </form>
+                    <p id="responseMessage" class="text-center text-sm mt-4 text-gray-700"></p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+
+    <footer class=" text-white mx-6 ">
+        <!-- First Line: Horizontal lines with social media icons -->
+        <div class="flex flex-col md:flex-row items-center justify-center mb-6">
+            <div class=" w-40 h-[2px] bg-gray-500"></div>
+            <div class="flex items-center mx-6 gap-6 mt-4 md:mt-0">
+                <a href="mailto:kshitijadarde@gmail.com?subject=Hello&body=I%20am%20interested%20in%20your%20work"
+                    class="text-gray-400 hover:text-white" target="_blank">
+                    <i class="fas fa-envelope text-2xl"></i>
+                </a>
+                <a href="http://www.linkedin.com/in/kshitija-d-95b2591aa" class="text-gray-400 hover:text-white"
+                    target="_blank">
+                    <i class="fab fa-linkedin-in text-2xl"></i>
+                </a>
+                <a href="https://github.com/CoderKD101" class="text-gray-400 hover:text-white" target="_blank">
+                    <i class="fab fa-github text-2xl"></i>
+                </a>
+                <a href="https://drive.google.com/file/d/1Tl-ekHgJeNCa6i83-WxycatFh9qn0F4E/view?usp=sharing"
+                    class="text-gray-400 hover:text-white" target="_blank">
+                    <i class="fa fa-file text-2xl" aria-hidden="true"></i>
+                </a>
+            </div>
+            <div class="w-40 h-[2px] bg-gray-500"></div>
+        </div>
+
+        </div>
+
+        <!-- Second Line: Logo -->
+        <div class="text-center mb-4">
+            <img src="/images/logo-img.png" alt="Logo" class="h-16 md:h-20 mx-auto">
+        </div>
+
+        <!-- Third Line: Copyright Info -->
+        <div class="text-center text-gray-500 text-sm md:text-base">
+            © 2025 Kshitija Darde. All Rights Reserved.
+        </div>
+    </footer>
+
+
+
+
+
+
+
+
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <!-- Setup and start animation! -->
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['Code to Solve, Design to Inspire.'],
+            typeSpeed: 50,
+        });
+    </script>
+
+    <script>
+        // Get necessary elements
+        const aboutMeButton = document.getElementById("aboutMeButton");
+        const aboutMePopup = document.getElementById("aboutMePopup");
+        const popupContent = document.getElementById("popupContent");
+        const closePopup = document.getElementById("closePopup");
+
+        // Show the popup
+        aboutMeButton.addEventListener("click", () => {
+            aboutMePopup.classList.remove("hidden"); // Show the overlay
+        });
+
+        // Hide the popup
+        closePopup.addEventListener("click", () => {
+            aboutMePopup.classList.add("hidden"); // Hide the overlay
+        });
+
+        // Hide the popup when clicking outside the content
+        aboutMePopup.addEventListener("click", (e) => {
+            if (e.target === aboutMePopup) {
+                aboutMePopup.classList.add("hidden"); // Hide the overlay
+            }
+        });
+
+    </script>
+
+
+    <script>
+        document.querySelector('form').addEventListener('submit', async (e) => {
+            e.preventDefault(); // Prevent default form submission
+
+            // Collect form values
+            const name = document.querySelector('#name').value;
+            const email = document.querySelector('#email').value;
+            const message = document.querySelector('#message').value;
+
+            // Send POST request to backend
+            try {
+                const response = await fetch('http://localhost:5000/send-message', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({ name, email, message }),
+                });
+
+                const result = await response.json();
+                alert(result.message); // Display success or error message
+
+                // Clear the form fields after successful submission
+                if (response.ok) {
+                    document.querySelector('form').reset(); // This will reset the input fields
+                }
+
+            } catch (error) {
+                alert('Something went wrong. Please try again.');
+                console.error(error);
+            }
+        });
+    </script>
+
+
+
+
+
+
+
+
+</body>
+
+</html>
