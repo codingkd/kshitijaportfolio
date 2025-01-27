@@ -7,7 +7,11 @@ const app = express();
 
 // Middleware
 app.use(bodyParser.json());
-app.use(cors());
+app.use(cors({
+    origin: '*', // Allow all origins during development; restrict in production
+    methods: ['GET', 'POST'],
+    allowedHeaders: ['Content-Type']
+}));
 
 // POST route for form submission
 app.post('/send-message', async (req, res) => {
@@ -21,17 +25,17 @@ app.post('/send-message', async (req, res) => {
     try {
         // Configure Nodemailer
         const transporter = nodemailer.createTransport({
-            service: 'Gmail', // or any other email service provider
+            service: 'Gmail',
             auth: {
-                user: 'kshitijadarde@gmail.com', // Replace with your email
-                pass: 'ujau vwnx ldlz fhgh', // Replace with your email password or app password
+                user: 'kshitijadarde@gmail.com', // Your email address
+                pass: 'ujau vwnx ldlz fhgh', // Your email password/app password
             },
         });
 
         // Email content
         const mailOptions = {
             from: 'kshitijadarde@gmail.com',
-            to: 'kshitijadarde@gmail.com', // Where you want to receive messages
+            to: 'kshitijadarde@gmail.com',
             subject: 'New Message from Contact Form',
             html: `
                 <h3>Contact Form Message</h3>
@@ -50,8 +54,8 @@ app.post('/send-message', async (req, res) => {
     }
 });
 
-// Start the server
-const PORT = 5000;
+// Deployment configuration
+const PORT = process.env.PORT || 5000; // Support dynamic ports for deployment
 app.listen(PORT, () => {
-    console.log(`Server is running on http://localhost:${PORT}`);
+    console.log(`Server is running on port ${PORT}`);
 });
